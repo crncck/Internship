@@ -25,3 +25,13 @@ It is a basic app to convert RGB to HEX and HEX to RGB.
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gt73t7ntlxg309i0kgjur.gif" alt="converter" width="230" height="500" />
 
 <br>
+
+### Rolling Dice
+
+A basic application that can roll two dice with shaking the phone.
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gt7azgnpzwg309i0kggp1.gif" alt="converter" width="230" height="500" />
+
+<br>
+
+
