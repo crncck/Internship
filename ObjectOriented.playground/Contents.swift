@@ -29,7 +29,7 @@ print(person1.name)                     // Unknown
 
 
 
-// --- Inheretence ---
+// --- inheritance ---
 
 struct Grade {
     var lessonName: String
