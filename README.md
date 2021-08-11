@@ -34,4 +34,44 @@ A basic application that can roll two dice with shaking the phone.
 
 <br>
 
+### Functions
 
+A playground to learn about functions.
+
+<br>
+
+### Struct
+
+A playground to learn about the use of struct and the difference between reference and value type.
+
+<br>
+<br>
+
+## Week 2
+
+<br>
+
+### Object Oriented Programming
+
+This playground contains examples of classes, some concepts of object-oriented programming like inheritance, polymorphism.
+
+<br>
+
+### Protocols & Extension
+
+Examples and use of protocols and extension concepts.
+
+<br>
+
+
+### Enumerations
+
+An enumeration defines a common type for a group of related values and enables you to work with those values in a type-safe way within your code. This playground shows examples and use of it.
+
+<br>
+
+### Generics
+
+Generic code enables to write flexible, reusable functions and types that can work with any type, subject to requirements that has been define. This playground contains generic types and examples of type constraints.
+
+<br>
