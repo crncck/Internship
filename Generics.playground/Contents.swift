@@ -160,3 +160,170 @@ if let topItem = stackofNumbers.topItem {
     print("The top item: \(topItem).")           // The top item: 3
 }
 
+
+
+
+
+
+
+// --- Generics & Protocols : Associated Type Override ---
+
+protocol FindMinMaxValues {
+    associatedtype ValueType = Int
+    var values: [ValueType] {get set}
+    var maxValue: ValueType {get set}
+    var minValue: ValueType {get set}
+    func findMaxValue() -> ValueType?
+    func findMinValue() -> ValueType?
+}
+
+
+class Numbers : FindMinMaxValues {
+    var values: [Int]
+    var maxValue: Int
+    var minValue: Int
+
+
+    func findMaxValue() -> Int? {
+
+        guard values.isEmpty == false else {
+            print("Empty array")
+            return nil
+        }
+
+        var max : Int = values[0]
+        for number in values {
+            if number > max {
+                max = number
+            }
+        }
+        return max
+    }
+
+
+    func findMinValue() -> Int? {
+
+        guard values.isEmpty == false else {
+            print("Empty array")
+            return nil
+        }
+
+        var min : Int = values[0]
+        for number in values {
+            if number < min {
+                min = number
+            }
+        }
+        return min
+    }
+
+    init(values : [Int]) {
+        self.values = values
+        self.maxValue = -1
+        self.minValue = -1
+
+        if let maxValue = self.findMaxValue() {
+            self.maxValue = maxValue
+        }
+
+        if let minValue = self.findMinValue() {
+            self.minValue = minValue
+        }
+
+    }
+}
+
+
+var array1: Numbers = Numbers(values: [1, 5, -1, 7, 9, 25, -9, 36])
+print(array1.findMaxValue()!)                   // 36
+print(array1.findMinValue()!)                   // -9
+
+
+
+
+
+class Word : FindMinMaxValues {
+    typealias ValueType = String
+    var values: [String]
+    var maxValue: String
+    var minValue: String
+
+    func findMaxValue() -> String? {
+
+        guard values.isEmpty == false else {
+            print("Empty array")
+            return nil
+        }
+
+        var maxWord = values[0]
+        for word in values {
+            if word.count > maxWord.count {
+                maxWord = word
+            }
+        }
+        return maxWord
+    }
+
+    func findMinValue() -> String? {
+
+        guard values.isEmpty == false else {
+            print("Empty array")
+            return nil
+        }
+
+        var minWord = values[0]
+        for word in values {
+            if word.count < minWord.count {
+                minWord = word
+            }
+        }
+        return minWord
+    }
+
+    init(values : [String]) {
+        self.values = values
+        maxValue = ""
+        minValue = ""
+
+        if let shortWord = findMinValue() {
+            minValue = shortWord
+        }
+
+        if let longWord = findMaxValue() {
+            maxValue = longWord
+        }
+    }
+}
+
+
+var array2: Word = Word(values: ["apple", "banana", "apricot", "melon"])
+print(array2.findMaxValue()!)                       // apricot
+print(array2.findMinValue()!)                       // apple
+
+
+
+
+
+
+// --- Generics & Enum ---
+
+enum Result<T> {
+    case Successful(T)
+    case Failed(T)
+}
+
+let r1 =  Result.Successful(Int())
+print(r1)                                           // Successful(0)
+
+var r2 = Result.Failed(Int())
+print(r2)
+
+r2 = Result.Successful(Int(4))
+print(r2)
+
+
+var r3 = Result.Failed(())
+print(r3)
+
+var r4 : Result<Void> = Result.Successful(())
+print(r4)
