@@ -75,3 +75,17 @@ An enumeration defines a common type for a group of related values and enables y
 Generic code enables to write flexible, reusable functions and types that can work with any type, subject to requirements that has been define. This playground contains generic types and examples of type constraints.
 
 <br>
+
+### Error Handling
+
+Error handling is the process of responding to and recovering from error conditions in the program. And in this playground, error handling examples were done.
+
+<br>
+
+### Book App
+
+This basic app is an example of usage of Collection view.
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gte8cjf32eg609i0kggxv02.gif" alt="converter" width="230" height="500" />
+
+<br>
