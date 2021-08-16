@@ -101,6 +101,6 @@ This basic app is an example of usage of Collection view.
 
 A basic app to store notes using Userdefaults, with a Table view to list the note items.
 
-<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtimtxxs38g609i0kgnpd02.gif" alt="converter" width="230" height="500" />
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtinsz3rsdg609i0kg4qq02.gif" alt="converter" width="230" height="500" />
 
 <br>
