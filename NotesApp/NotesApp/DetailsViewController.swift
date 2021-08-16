@@ -20,6 +20,8 @@ class DetailsViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         lblNoteDetails.text = detail
+
+        self.navigationItem.largeTitleDisplayMode = .never
     }
 
     func setDetail(a : String) {

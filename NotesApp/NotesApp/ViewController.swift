@@ -11,7 +11,6 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
 
     @IBOutlet weak var table: UITableView!
-    @IBOutlet weak var editButton: UIBarButtonItem!
 
     var fileURL : URL!
 
@@ -29,6 +28,12 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         table.dataSource = self
         table.delegate = self
 
+        self.navigationItem.largeTitleDisplayMode = .always
+
+        let editButton = editButtonItem
+        editButton.tintColor = UIColor.systemYellow
+        self.navigationItem.rightBarButtonItems?.append(editButton)
+
         let baseURL = try! FileManager.default.url(for: FileManager.SearchPathDirectory.documentDirectory, in: FileManager.SearchPathDomainMask.userDomainMask, appropriateFor: nil, create: false)
 
         print(baseURL)
@@ -43,6 +48,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+
 
         if selectedRow == -1 {
             return

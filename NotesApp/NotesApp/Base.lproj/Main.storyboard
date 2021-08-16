@@ -41,20 +41,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Notes" id="fqM-IA-Xj1">
-                        <rightBarButtonItems>
-                            <barButtonItem systemItem="add" id="ZES-M7-dEw">
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                                <connections>
-                                    <action selector="btnAddClicked:" destination="BYZ-38-t0r" id="ACv-cl-ju1"/>
-                                </connections>
-                            </barButtonItem>
-                            <barButtonItem springLoaded="YES" systemItem="edit" id="bzq-jw-Oih">
-                                <color key="tintColor" systemColor="systemYellowColor"/>
-                            </barButtonItem>
-                        </rightBarButtonItems>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="ZES-M7-dEw">
+                            <color key="tintColor" systemColor="systemYellowColor"/>
+                            <connections>
+                                <action selector="btnAddClicked:" destination="BYZ-38-t0r" id="ACv-cl-ju1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="editButton" destination="bzq-jw-Oih" id="F0l-KN-aGS"/>
                         <outlet property="table" destination="Xke-ng-Dch" id="bb2-e5-ya7"/>
                         <segue destination="hOy-s0-YSC" kind="show" identifier="goDetails" id="02L-Kp-BKj"/>
                     </connections>
@@ -71,32 +65,32 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="0LU-7W-19v">
-                                <rect key="frame" x="0.0" y="140" width="414" height="722"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0LU-7W-19v">
+                                <rect key="frame" x="20" y="166" width="374" height="696"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                 <color key="textColor" systemColor="labelColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M3G-XX-gvM"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="0LU-7W-19v" firstAttribute="centerX" secondItem="q7i-XN-Crn" secondAttribute="centerX" id="hHX-rr-kVM"/>
-                            <constraint firstItem="0LU-7W-19v" firstAttribute="leading" secondItem="M3G-XX-gvM" secondAttribute="leading" id="hsy-n8-eOK"/>
-                            <constraint firstItem="0LU-7W-19v" firstAttribute="top" secondItem="M3G-XX-gvM" secondAttribute="top" id="oCC-94-gUa"/>
-                            <constraint firstItem="0LU-7W-19v" firstAttribute="bottom" secondItem="M3G-XX-gvM" secondAttribute="bottom" id="slk-Eg-Crq"/>
+                            <constraint firstItem="0LU-7W-19v" firstAttribute="leading" secondItem="q7i-XN-Crn" secondAttribute="leadingMargin" id="CGe-Oq-wdt"/>
+                            <constraint firstItem="0LU-7W-19v" firstAttribute="trailing" secondItem="q7i-XN-Crn" secondAttribute="trailingMargin" id="QqW-be-ejS"/>
+                            <constraint firstItem="0LU-7W-19v" firstAttribute="top" secondItem="M3G-XX-gvM" secondAttribute="top" constant="26" id="hAR-gr-bLE"/>
+                            <constraint firstItem="0LU-7W-19v" firstAttribute="bottom" secondItem="M3G-XX-gvM" secondAttribute="bottom" id="sAe-Eb-eKQ"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="fHj-Wp-HQm"/>
+                    <navigationItem key="navigationItem" title="Details" id="fHj-Wp-HQm"/>
                     <connections>
                         <outlet property="lblNoteDetails" destination="0LU-7W-19v" id="3qo-Nu-dW0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="V26-2V-IOc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1904" y="80"/>
+            <point key="canvasLocation" x="1902.8985507246377" y="79.6875"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="hoD-fe-JkD">
