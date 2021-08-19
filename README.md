@@ -118,3 +118,11 @@ A basic app to store notes using Userdefaults, with a Table view to list the not
 It is an application where you can search for holidays in a specific country. It is an example of how we can retrieve data through API. The API was gotten from this **[website](https://calendarific.com/)**.
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtk2k6s60ug609i0kgdkx02.gif" alt="converter" width="230" height="500" />
+
+<br>
+
+### Weather App
+
+It's a weather app where you can search for a city and get the current temperature, humidity value, information about wind, and condition of the current weather in this city. It's another example of JSON parsing and API usage. The API is from this **[website](https://www.weatherapi.com/)**.
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtm38gf0vkg609i0kgqdt02.gif" alt="converter" width="230" height="500" />
