@@ -111,6 +111,10 @@ A basic app to store notes using Userdefaults, with a Table view to list the not
 
 ### Movies App
 
+An application to show movies with their categories and details. 
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtqpxl1v6mg609i0kgqve02.gif" alt="converter" width="230" height="500" />
+
 <br>
 
 ### Holiday Calendar App
