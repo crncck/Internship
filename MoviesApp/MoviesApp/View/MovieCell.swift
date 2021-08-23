@@ -7,13 +7,24 @@
 
 import UIKit
 
-class MovieCell: UICollectionViewCell {
+class MovieCell: UITableViewCell {
 
-    @IBOutlet weak var imgMovie: UIImageView!
+    @IBOutlet weak var movieImage: UIImageView!
+    @IBOutlet weak var movieName: UILabel!
 
-    override class func awakeFromNib() {
+
+    override func awakeFromNib() {
         super.awakeFromNib()
-
-        imgMovie.layer.cornerRadius = 10
     }
+
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+    }
+
+    func editCell(movie: Movie) {
+        movieImage.image = UIImage(named: movie.imageName)
+        movieName.text = movie.name
+    }
+
 }

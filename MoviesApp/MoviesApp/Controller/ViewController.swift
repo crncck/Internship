@@ -9,7 +9,18 @@ import UIKit
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var data = Dataset()
+
     var chosenCategoryName : String = ""
+
+    @IBOutlet weak var tableView: UITableView!
+
+    override func viewDidLoad() {
+        super.viewDidLoad()
+
+        tableView.delegate = self
+        tableView.dataSource = self
+    }
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.categories.count
@@ -42,21 +53,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             movieListViewController.chosenCategoryName = chosenCategoryName
         }
     }
-
-
-
-    var data = Dataset()
-
-    @IBOutlet weak var tableView: UITableView!
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        tableView.delegate = self
-        tableView.dataSource = self
-    }
-
-
 
 
 }
