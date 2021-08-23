@@ -138,3 +138,19 @@ It's a weather app where you can search for a city and get the current temperatu
 It's an application to get information about space objects (asteroids) near earth for the current date. It lists the object's name, id, absolute magnitude, relative velocity, and distance in different measures. The API is from **[NASA](https://api.nasa.gov/)** NeoWs (Near-Earth Object Web Service). 
 
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtnnqnktojg609i0kgqv802.gif" alt="converter" width="230" height="500" />
+
+<br>
+
+## Week 4
+
+<br>
+
+### Diabetes Prediction App
+
+It is an application to predict diabetes based on some information and diagnostic measures. 
+
+Codes are on this **[repository](https://github.com/crncck/Diabetes-Prediction-iOS)**.
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtr1ske8x6g609i0kgq8c02.gif" alt="converter" width="230" height="500" />
+
+<br>
