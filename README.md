@@ -154,3 +154,11 @@ Codes are on this **[repository](https://github.com/crncck/Diabetes-Prediction-i
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtr1ske8x6g609i0kgq8c02.gif" alt="converter" width="230" height="500" />
 
 <br>
+
+### MapKit App
+
+It is an example usage of MapKit. It shows marked place's street and city information. Also, it sets routes to a selected place. 
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtu66wqzxug609i0kgu0z02.gif" alt="converter" width="230" height="500" />
+
+<br>
