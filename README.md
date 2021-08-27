@@ -170,3 +170,9 @@ It is an example of how to define components with code and write auto layout pro
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtulx2jn31g609i0kgqv502.gif" alt="converter" width="230" height="500" />
 
 <br>
+
+### Dog Cat Classifier
+
+I built a coreml model that classifies the image as cat or dog using Turi Create and the dataset of **[Microsoft Research's Kaggle Dog vs Cat](https://www.kaggle.com/c/dogs-vs-cats/data)**. It takes an imported image and labels it like a cat or dog.
+
+<img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtvkugyw6qg609i0kgqv702.gif" alt="converter" width="230" height="500" />
