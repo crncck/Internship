@@ -165,6 +165,8 @@ It is an example usage of MapKit. It shows marked place's street and city inform
 
 ### Planets App
 
+It is an example of how to define components with code and write auto layout programmatically. Every page is a collection view cell.
+
 <img src="https://tva1.sinaimg.cn/large/008i3skNgy1gtulx2jn31g609i0kgqv502.gif" alt="converter" width="230" height="500" />
 
 <br>
